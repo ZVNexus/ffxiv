@@ -1,0 +1,41 @@
+name       : ffxiv
+version    : 0.2.8
+release    : 1
+source     :
+    - https://github.com/xivapi/ffxiv-launcher/archive/0.2.8.tar.gz : b2be8011df8eb41ccb89c6b0b3898c9b4d594a54c135d8a6c879bc6b9af1bb13
+license    : GPL-3.0-or-later
+networking : yes
+summary    : A custom built launcher for FFXIV written in Javascript on Nodejs via Electron.
+description: |
+    A custom built launcher for FFXIV written in Javascript on Nodejs via Electron.
+builddeps  :
+    - nodejs
+    - libsecret
+    - pkgconfig(x11)
+    - pkgconfig(xcb)
+    - yarn
+rundeps    :
+    - nodejs
+    - glib2
+setup      : |
+    %patch -p1 < $pkgfiles/exp-right.patch
+    npm install electron
+    yarn add sass-loader node-sass --dev
+    yarn run encore dev
+build      : |
+    yarn dist
+install    : |
+    install -dm00755                                $installdir/usr/bin/
+    install -dm00644                                $installdir/usr/lib/ffxiv/
+    cp -R  dist/linux-unpacked/*                    $installdir/usr/lib/ffxiv/
+    ln -s /usr/lib/ffxiv/ffxiv-launcher             $installdir/usr/bin/ffxiv-launcher
+
+    # Install icons
+    for icon_size in 16 32 48 128 256
+    do
+        install -D -m00644 $pkgfiles/icon_${icon_size}x${icon_size}.png $installdir/usr/share/icons/hicolor/${icon_size}x${icon_size}/apps/ffxiv.png
+    done
+
+    # Desktop File
+    rm -f $installdir/usr/share/applications/ffxiv.desktop
+    install -D -m00644 $pkgfiles/ffxiv.desktop $installdir/usr/share/applications/ffxiv.desktop

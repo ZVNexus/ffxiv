@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=0.2.8
+Name=FFXIV
+Comment=Unofficial FFXIV client
+Exec=env ffxiv-launcher -- %u
+Icon=ffxiv
+Terminal=false
+StartupWMClass=FFXIVDesktop
+Type=Application
+Categories=Games;Wine
+Keywords=ffxiv;FFXIV;final;xiv;
+X-GNOME-UsesNotifications=true
+

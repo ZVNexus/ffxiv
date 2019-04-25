@@ -1,0 +1,13 @@
+diff --git a/src/css/UI.scss b/src/css/UI.scss
+index bd014fe..ee11093 100644
+--- a/src/css/UI.scss
++++ b/src/css/UI.scss
+@@ -200,7 +200,7 @@ nav {
+ 
+ .expansion {
+     position: absolute;
+-    left: 30px; bottom: 30px;
++    right: 30px; bottom: 30px;
+ }
+ 
+ .notice-fade {

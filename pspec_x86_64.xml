@@ -1,0 +1,109 @@
+<PISI>
+    <Source>
+        <Name>ffxiv</Name>
+        <Packager>
+            <Name>Alexander J. Koskovich</Name>
+            <Email>zvnexus@outlook.com</Email>
+        </Packager>
+        <License>GPL-3.0-or-later</License>
+        <Summary xml:lang="en">A custom built launcher for FFXIV written in Javascript on Nodejs via Electron.</Summary>
+        <Description xml:lang="en">A custom built launcher for FFXIV written in Javascript on Nodejs via Electron.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>ffxiv</Name>
+        <Summary xml:lang="en">A custom built launcher for FFXIV written in Javascript on Nodejs via Electron.</Summary>
+        <Description xml:lang="en">A custom built launcher for FFXIV written in Javascript on Nodejs via Electron.
+</Description>
+        <Files>
+            <Path fileType="executable">/usr/bin/ffxiv-launcher</Path>
+            <Path fileType="library">/usr/lib/ffxiv/LICENSE.electron.txt</Path>
+            <Path fileType="library">/usr/lib/ffxiv/LICENSES.chromium.html</Path>
+            <Path fileType="library">/usr/lib/ffxiv/chrome_100_percent.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/chrome_200_percent.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/ffxiv-launcher</Path>
+            <Path fileType="library">/usr/lib/ffxiv/icudtl.dat</Path>
+            <Path fileType="library">/usr/lib/ffxiv/libEGL.so</Path>
+            <Path fileType="library">/usr/lib/ffxiv/libGLESv2.so</Path>
+            <Path fileType="library">/usr/lib/ffxiv/libVkICD_mock_icd.so</Path>
+            <Path fileType="library">/usr/lib/ffxiv/libffmpeg.so</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/am.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/ar.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/bg.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/bn.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/ca.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/cs.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/da.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/de.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/el.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/en-GB.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/en-US.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/es-419.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/es.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/et.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/fa.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/fi.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/fil.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/fr.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/gu.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/he.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/hi.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/hr.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/hu.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/id.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/it.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/ja.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/kn.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/ko.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/lt.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/lv.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/ml.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/mr.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/ms.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/nb.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/nl.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/pl.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/pt-BR.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/pt-PT.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/ro.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/ru.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/sk.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/sl.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/sr.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/sv.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/sw.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/ta.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/te.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/th.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/tr.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/uk.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/vi.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/zh-CN.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/locales/zh-TW.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/natives_blob.bin</Path>
+            <Path fileType="library">/usr/lib/ffxiv/resources.pak</Path>
+            <Path fileType="library">/usr/lib/ffxiv/resources/app.asar</Path>
+            <Path fileType="library">/usr/lib/ffxiv/resources/electron.asar</Path>
+            <Path fileType="library">/usr/lib/ffxiv/snapshot_blob.bin</Path>
+            <Path fileType="library">/usr/lib/ffxiv/swiftshader/libEGL.so</Path>
+            <Path fileType="library">/usr/lib/ffxiv/swiftshader/libGLESv2.so</Path>
+            <Path fileType="library">/usr/lib/ffxiv/v8_context_snapshot.bin</Path>
+            <Path fileType="data">/usr/share/applications/ffxiv.desktop</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/ffxiv.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/ffxiv.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/256x256/apps/ffxiv.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/ffxiv.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/ffxiv.png</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2019-04-25</Date>
+            <Version>0.2.8</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Alexander J. Koskovich</Name>
+            <Email>zvnexus@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>
